@@ -1,3 +1,7 @@
+#exercicios sobre variaveis, constantes
+
+
+
 import math
 
 #exem
@@ -69,14 +73,14 @@ import math
 
 
 
-valorInteiro = int(input("Valor: "))
+# valorInteiro = int(input("Valor: "))
 
-milhar = valorInteiro // 1000
+# milhar = valorInteiro // 1000
 
-centena = (valorInteiro % 1000)// 100
+# centena = (valorInteiro % 1000)// 100
 
-dezena = ((valorInteiro % 1000)% 100) // 10
+# dezena = ((valorInteiro % 1000)% 100) // 10
 
-unidade = (((valorInteiro % 1000)% 100) % 10) // 1
+# unidade = (((valorInteiro % 1000)% 100) % 10) // 1
 
-print("Valor invertido: ", unidade, dezena, centena, milhar)
+# print("Valor invertido: ", unidade, dezena, centena, milhar)
