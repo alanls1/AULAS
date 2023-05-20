@@ -215,15 +215,37 @@ import math
 #     print(valorX2)
 
 
-saldoMedio = float(input("Informe o saldo: "))
+#exer 9
 
-if saldoMedio <= 0 :
-    print("Sem saldo")
-elif saldoMedio <= 500 : 
-    print("Não há limite")
-elif saldoMedio > 500 and saldoMedio < 1000: 
-    saldoMedioFinal = saldoMedio * 1.08 
-    print ("Saldo final: ", saldoMedioFinal)
-else: 
-    saldoMedioFinal = saldoMedio * 1.15
-    print ("Saldo final: ", saldoMedioFinal)
+# saldoMedio = float(input("Informe o saldo: "))
+
+# if saldoMedio <= 0 :
+#     print("Sem saldo")
+# elif saldoMedio <= 500 : 
+#     print("Não há limite")
+# elif saldoMedio > 500 and saldoMedio < 1000: 
+#     saldoMedioFinal = saldoMedio * 1.08 
+#     print ("Saldo final: ", saldoMedioFinal)
+# else: 
+#     saldoMedioFinal = saldoMedio * 1.15
+#     print ("Saldo final: ", saldoMedioFinal)
+
+
+#exer 10
+
+ano = int(input("Ano: "))
+mes = int(input("Mês: "))
+
+
+if mes == 2:
+    if ( ano % 4  == 0 and ano % 100 != 0 ) or ( ano % 400 == 0 ) :
+        print("è bissexto")
+        dias = 29
+    else:
+        print("Não é bissexto... ")
+        dias = 28
+elif mes == 4 or mes == 6 or mes == 9 or mes == 11 :
+    dias = 30
+else:
+    dias = 31
+    
